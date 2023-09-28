@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.container{
+  background-color:#ccc;
+  padding:10px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+/*   align-items:baseline; */
+}
+
+.item{
+  background-color:#f1425d;
+  padding:30px;
+  margin:30px;
+  color:#fff;
+  font-size:40px;
+/*   Setting flags */
+/*   flex-grow:1; */
+}
+
+.item2{
+ height:200px;
+  /*   flex-grow:3; or can use "flex :3""{simply}*/
+  /* flex-basis:20%; Occupied 20% width of the container*/
+/*   flex-basis: 300px; */
+/*   flex-shrink : 0; /*1 is the normal value*/ 
+/*   flex: 0 0 300 {flex-grow,flex-shrink,flex-basis} */
+  flex: 0 1 300px;  /* flex shrink normal value is 1 change 0 to fix the value 300px*/
+}
+/* flex-grow  -- Occupyiing screen width*/
+.item5{
+  flex:1;
+/*  flex-grow: 1;  or flex-grow or flex = 3 That means , the element flex : 3 will become thrice the size of other elemnts */
+}
+
+/* .item2{
+  order: 2;
+} */
+/* Modifing single element */
+.item4{
+  align-self:flex-end;
+  order:-1;  /*Other all element have order= 1*/
+}
+
+/* flex-shrink control how an element shrink */
+
+
+/*----------------Above Code Updated -----------------------*/
+
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.container{
+  background-color:#ccc;
+  padding:10px;
+  display:flex;
+  height:1000px;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+/*   align-items:baseline; */
+  
+  
+  flex-wrap:wrap;
+  align-content:center; /*  aligns rows based on cross axisCross in within conatiner height and width && similar to justify content && stretch is the deafult*/ 
+}
+
+.item{
+  background-color:#f1425d;
+  padding:30px;
+  margin:5px;
+  color:#fff;
+  font-size:40px;
+/*   Setting flags */
+/*   flex-grow:1; */
+}
+
+.item2{
+ height:200px;
+  /*   flex-grow:3; or can use "flex :3""{simply}*/
+  /* flex-basis:20%; Occupied 20% width of the container*/
+/*   flex-basis: 300px; */
+/*   flex-shrink : 0; /*1 is the normal value*/ 
+/*   flex: 0 0 300 {flex-grow,flex-shrink,flex-basis} */
+  flex: 0 0 300px; /* flex shrink normal value is 1*/
+}
+/* flex-grow  -- Occupyiing screen width*/
+.item5{
+  flex:1;
+  order:1;
+/*  flex-grow: 1;  or flex-grow or flex = 3 That means , the element flex : 3 will become thrice the size of other elemnts */
+}
+
+/* .item2{
+  order: 2;
+} */
+/* Modifing single element */
+.item4{
+/*   align-self:flex-end; */
+/*   order:-1;  /*Other all element have order= 1*/ */
+}
+
+/* flex-shrink control how an element shrink */
